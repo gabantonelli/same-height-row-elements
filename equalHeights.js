@@ -13,12 +13,10 @@
             for (let i = 0; i < arr.length; i++) {
                 if (arr[i].offsetHeight < maxHeight) arr[i].style.height = maxHeight + 'px';
             }
-            console.log('resized big');
         } else {
             for (let i = 0; i < arr.length; i++) {
                 arr[i].style.height = 'auto';
             }
-            console.log('resized small');
         }
     };
 
@@ -30,4 +28,4 @@
     });
 
 
-})('riga-notizie', 'news-thumb-title', 767); //Set here the class of the row, the class of the elements to fix, and the breakpoint width
+})('parentClassName', 'childClassName', breakpointInPx); //Set here the class of the row, the class of the elements to fix, and the breakpoint width
